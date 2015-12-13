@@ -10,13 +10,13 @@ public class HelloWorldController {
 	String hello = "Hello World!";
 	
 	
-	@RequestMapping("/test/{name}")
+	@RequestMapping("/hello/{name}")
 	@ResponseBody
 	public String showMessage(@PathVariable("name") String name) {
 		return "Hello " + name + "!";
 	}
 	
-	@RequestMapping("/test")
+	@RequestMapping("/hello")
 	@ResponseBody
 	public String showMessage() {
 		return hello;
